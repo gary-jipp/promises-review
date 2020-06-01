@@ -1,4 +1,5 @@
-// A common reason to create a promise is to wrap a callback
+
+// A common reason to create a promise is just to wrap a callback
 const myPromise1 = function (timeout) {
 	const promise = new Promise(() => {
 		setTimeout(() => {
