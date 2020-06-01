@@ -11,9 +11,6 @@ myPromise(1)
   .then(result => console.log("then:", result))
   .catch(e => console.log("catch:", e));
 
-
-
-
 // How about this?  Just return the error from the catch
 myPromise(-1)
   .catch(e => e)
