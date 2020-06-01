@@ -26,3 +26,5 @@ promise3 = myPromise(2).catch(e => e);
 Promise.all([promise1, promise2, promise3])
   .then(result => console.log("then:", result))
   .finally(() => console.log("finally"));
+
+  // Note: Be careful with these!  The error object may not be the same as the result object
