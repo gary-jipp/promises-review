@@ -21,6 +21,11 @@ myPromise(-5)
   .then(result => console.log(result))
   .catch(e => console.log(e));
 
+// what happens if we reverse the order of the then-catch. More about this later
+myPromise(-1)
+  .catch(e => console.log("catch:", e))
+  .then(result => console.log("then:", result));
+
 // A "finally" executes regardless
 myPromise(-5)
   .then(result => console.log(result))

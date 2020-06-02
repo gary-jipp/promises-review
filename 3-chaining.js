@@ -15,9 +15,7 @@ myPromise(1)
     console.log("then:", result);
     return myPromise(1);
   })
-  .then(result => {
-    console.log("then:", result);
-  })
+  .then(result => console.log("then:", result))
   .catch(e => console.log("catch: ", e));
 
 // We can chain lots of promises. No more waterfalls!!
