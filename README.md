@@ -1,7 +1,7 @@
 # Promises Review
 
 In this session we will talk about Promises
-- why we prefer to use them to callbacks
+- why we generally prefer them to callbacks
 - how and why we create them (spoiler: rarely)
 - how and when we use them (spoiler: often!)
 - you gotta be able to handle rejection. It happens!
