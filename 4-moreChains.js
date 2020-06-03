@@ -6,7 +6,7 @@ myPromise(1)
   .then(result => result)
   .then(result => result)
   .then(result => result)
-  .then(result => 5)
+  .then(result => { return { "result": result, "stuff": 5 } }) // can push anything we want onto the chain
   .then(result => result)
   .then(result => console.log("then:", result))
   .catch(e => console.log("catch:", e));
