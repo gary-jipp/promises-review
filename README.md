@@ -11,7 +11,7 @@ In this session we will talk about Promises
   - the return from a then (or catch) does NOT have to be another Promise!
   - whatever is returned gets handled by the next "then" in the chain, as a Promise
   - if a Promise is returned, it gets handled by the next "then"
-  - if a value is returned, it gets converted to a resolved Promise, then handled as a Promise 
+  - if a value is returned, it gets converted to a resolved Promise, then also handled in the next "then"
   - this even applies to "undefined" (Zombie Promise). eg: return value of console.log(result)
   - We can use this behavior for some cool tricks
 - The behavior of a then/catch return allows us to chain Promises
