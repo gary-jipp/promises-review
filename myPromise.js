@@ -9,8 +9,8 @@ const myPromise1 = function (timeout) {
 	return promise;
 };
 
-// But we can do more.  We can return stuff
-// and notify the caller when we are done
+// Of course that's not very useful. Don;t know when it completed
+// We can do more.  We can return stuff and notify the caller when we are done
 const myPromise2 = function (timeout) {
 	const promise = new Promise((resolve) => {
 		setTimeout(() => {
