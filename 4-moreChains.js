@@ -11,11 +11,6 @@ myPromise(1)
   .then(result => console.log("then:", result))
   .catch(e => console.log("catch:", e));
 
-// How about this?  Just return the error from the catch
-myPromise(-1)
-  .catch(e => e)
-  .then(result => console.log("then:", result)); // hey! The "then" fired!  Why?
-
 
 // Here's an Example of a function that returns the results of a promise
 // Along with some other data.  Very Useful pattern
@@ -35,3 +30,9 @@ const myFunction = function () {
 // Here's how we use it
 const value = myFunction();
 value.then(res => console.log("then: ", res));
+
+
+// How about this?  Just return the error from the catch
+myPromise(-1)
+  .catch(e => e)
+  .then(result => console.log("then:", result)); // hey! The "then" fired!  Why?
