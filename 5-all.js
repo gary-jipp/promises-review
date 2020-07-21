@@ -8,8 +8,8 @@ let promise3 = myPromise(2);
 
 // Recall that they All resolve or they All fail
 Promise.all([promise1, promise2, promise3])
-  .catch(e => console.log("catch:", e))         // console.log still returns "something" (undefined)
-  .then(result => console.log("then:", result))	// So why does this still fire??
+  .catch(e => console.log("catch:", e))
+  .then(result => console.log("then:", result))
   .finally(() => console.log("finally"));
 
 // Question:  why did we get the "undefined" in the console log above but not here?? 
